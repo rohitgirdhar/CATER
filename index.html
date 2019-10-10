@@ -1,0 +1,163 @@
+<!-- Taken from url=http://www.cs.cmu.edu/~dfouhey/3DP/index.html -->
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-71557010-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-71557010-7');
+</script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="StyleSheet" href="assets/style.css" type="text/css" media="all">
+
+<title>CATER</title>
+<script type="text/javascript" async="" src="assets/ga.js"></script><script type="text/javascript">
+</script>
+
+<!-- bibliographic tags -->
+<meta name="citation_title" content="CATER: A diagnostic dataset for Compositional Actions and TEmporal Reasoning"/>
+<meta name="citation_author" content="Girdhar, Rohit"/>
+<meta name="citation_author" content="Ramanan, Deva"/>
+<meta name="citation_publication_date" content="2019"/>
+<meta name="citation_conference_title" content="arXiv"/>
+<meta name="citation_pdf_url" content=""/>
+
+<style type="text/css">
+#primarycontent h1 {
+	font-variant: small-caps;
+}
+#primarycontent h3 {
+}
+#primarycontent teasertext {
+	text-align: center;
+}
+#primarycontent p {
+	text-align: center;
+}
+#primarycontent {
+	text-align: justify;
+}
+#primarycontent p {
+	text-align: justify;
+}
+#primarycontent p iframe {
+	text-align: center;
+}
+#avatar {
+  border-radius: 50%;
+}
+</style>
+<script type="text/javascript">
+  function togglevis(elid){
+    el=document.getElementById(elid);
+    aelid=elid+"a";
+    ael=document.getElementById(aelid);
+    if(el.style.display=='none'){
+      el.style.display='inline-table';
+      ael.innerHTML="[Hide BibTex]";
+    }else{
+      el.style.display='none';
+      ael.innerHTML="[Show BibTex]";
+    }
+  }
+</script>
+
+<link rel="icon" type="image/png" href="http://rohitgirdhar.github.io/favicon.png">
+
+</head>
+<body>
+<div id="primarycontent">
+<h1 align="center" itemprop="name"><strong>
+    CATER: A diagnostic dataset for <br/> Compositional Actions and TEmporal Reasoning
+</strong></h1>
+
+
+   <table class="results" align="center">
+    <tr>
+      <td align="center"><iframe style=" width: 50em; height: 30em" src="https://www.youtube.com/embed/qnOvSBBWuCA?&modestbranding=1&autohide=1&autoplay=1&mute=1&controls=0&loop=1&list=PL7CKxJywLgzdQcKPOymbAE28n_mD51gSv&showinfo=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </td>
+    </tr>
+    <tr><td style="text-width: 50%; text-align: center"> Human (and apparently even cats!) are able to solve long temporal reasoning tasks like locating the ball as the cups are shuffled. Can we design similarly hard tasks for computers? </td></tr>
+    <tr>
+      <td align="center">
+        <img src="assets/teaser/CLEVR_new_000105.gif" width=30%>
+        <img src="assets/teaser/CLEVR_new_000115.gif" width=30%>
+        <img src="assets/teaser/CLEVR_new_000081.gif" width=30%>
+      </td>
+    </tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr>
+      <td class="credits" align="justify">
+      Computer vision has undergone a dramatic revolution in performance, driven in large part through deep features trained on large-scale supervised datasets. However, much of these improvements have focused on static image analysis; video understanding has seen rather modest improvements. Even though new datasets and spatiotemporal models have been proposed, simple frame-by-frame classification methods often still remain competitive. We posit that current video datasets are plagued with implicit biases over scene and object structure that can dwarf variations in temporal structure. In this work, we build a video dataset with fully observable and controllable object and scene bias, and which truly requires spatiotemporal understanding in order to be solved. Our dataset, named CATER, is rendered synthetically using a library of standard 3D objects, and tests the ability to recognize compositions of object movements that require long-term reasoning. As an illustrative example, consider the "cups and ball" shell game, where a target object (ball) is adversarially passed between container
+      objects (cups) so as to deceive an observer as to its final
+      position. Solving this task requires reasoning about recursive container relations and long-term occlusions. In addition to being a challenging dataset, CATER also provides a plethora of diagnostic tools to analyze modern spatiotemporal video architectures by being completely observable and controllable. Using CATER, we provide insights into some of the most recent state of the art deep video architectures.
+      </td>
+    </tr>
+    <tr>
+    </tr>
+ </table>
+
+
+
+<h3>People</h3>
+
+<table id="people" style="margin:auto;">
+  <tr>
+    <td></td>  <!-- For some reason it scales up the first td.. so adding a dummy td -->
+    <td>
+      <img src="assets/authors/rohit.jpg"/><br/>
+      <a href="http://rohitgirdhar.github.io" target="_blank">Rohit Girdhar</a>
+    </td>
+    <td>
+      <img src="assets/authors/deva.jpg"/><br/>
+      <a href="http://cs.cmu.edu/~deva" target="_blank">Deva Ramanan</a>
+    </td>
+  </tr>
+</table>
+
+
+<h3>Paper</h3>
+<table>
+  <tr></tr>
+  <tr><td>
+    <a href="https://arxiv.org/abs/1910.04744"><img style="box-shadow: 5px 5px 2px #888888; margin: 10px" src="assets/paper-screenshot.png" width="150px"/></a>
+  </td>
+  <td></td>
+  <td>
+    R. Girdhar and D. Ramanan<br/>
+    <a href="">CATER: A diagnostic dataset for Compositional Actions and TEmporal Reasoning</a><br/>
+    arXiv 2019<br/>
+    [<a href="https://arxiv.org/abs/1910.04744">arXiv</a>]
+    [<a href="http://github.com/rohitgirdhar/CATER">Code</a>]
+    [<a href="assets/suppl/video.mp4">Supplementary video</a>]
+    [<a href="javascript:togglevis('girdhar2019cater')" id="bibtex">BibTex</a>] <br/>
+  </td>
+</table>
+
+
+
+<table class="bibtex" style="display:none" id="girdhar2019cater"><tr><td>
+<pre>
+@inproceedings{girdhar2019cater,
+    title = {{CATER: A diagnostic dataset for Compositional Actions and TEmporal Reasoning}},
+    author = {Girdhar, Rohit and Ramanan, Deva},
+    booktitle = {arXiv preprint arXiv:1910.04744},
+    year = 2019
+}
+</pre>
+</td></tr></table>
+
+<h3>Acknowledgements</h3>
+<p>
+Authors would like to thank Ishan Misra for many helpful discussions and help with systems. This research is based upon work supported in part by NSF Grant 1618903.
+</p>
+</div>
+
+</body></html>
