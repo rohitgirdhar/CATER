@@ -1,0 +1,9 @@
+[submodule "baselines/caffe2"]
+	path = baselines/caffe2
+	url = https://github.com/caffe2/caffe2.git
+[submodule "baselines/c2board"]
+	path = baselines/c2board
+	url = https://github.com/endernewton/c2board.git
+[submodule "baselines/video-nonlocal-net/external_lib/average-precision"]
+	path = baselines/video-nonlocal-net/external_lib/average-precision
+	url = https://github.com/achalddave/average-precision.git

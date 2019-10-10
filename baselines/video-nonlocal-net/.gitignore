@@ -1,0 +1,6 @@
+*.pyc
+*.swp
+
+data/checkpoints
+outputs
+temp_save

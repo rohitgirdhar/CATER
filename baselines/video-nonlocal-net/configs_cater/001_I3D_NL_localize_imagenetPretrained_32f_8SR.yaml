@@ -1,0 +1,95 @@
+DATADIR: /scratch/rgirdhar/release/all_actions/lists/localize/lmdb/
+FILENAME_GT: /scratch/rgirdhar/release/all_actions/lists/localize/val.txt
+VIDEO_DECODER_THREADS: 3
+
+
+NUM_GPUS: 4
+LOG_PERIOD: 10
+
+MODEL:
+  NUM_CLASSES: 36
+  MODEL_NAME: resnet_video
+  BN_MOMENTUM: 0.9
+  BN_EPSILON: 1.0000001e-5
+  ALLOW_INPLACE_SUM: True
+  ALLOW_INPLACE_RELU: True
+  ALLOW_INPLACE_RESHAPE: True
+  MEMONGER: True
+
+  BN_INIT_GAMMA: 0.0
+  DEPTH: 50
+  VIDEO_ARC_CHOICE: 2
+
+RESNETS:
+  NUM_GROUPS: 1  # ResNet: 1x; RESNETS: 32x
+  WIDTH_PER_GROUP: 64  # ResNet: 64d; RESNETS: 4d
+  TRANS_FUNC: bottleneck_transformation_3d # bottleneck_transformation, basic_transformation
+
+TRAIN:
+  DATA_TYPE: train
+  BATCH_SIZE: 8
+  EVAL_PERIOD: 1000
+  JITTER_SCALES: [256, 320]
+  DROPOUT_RATE: 0.5
+
+  MEM_CACHE: False
+  COMPUTE_PRECISE_BN: True
+  CROP_SIZE: 224 # 112
+
+  VIDEO_LENGTH: 32  # default: 32  # <===============
+  SAMPLE_RATE: 8  # default: 2  # <===============
+  TEST_AFTER_TRAIN: True
+
+  PARAMS_FILE: outputs/pretrained_model/r50_pretrain_c2_model_iter450450_clean.pkl
+
+  # This is not working for me on CMU cluster, as we quickly run out of
+  # threads needed to do this processing. I was able to do it at train time,
+  # by setting VIDEO_DECODER_THREADS to 4, but then for testing it again runs
+  # out of threads and might need to reduce VIDEO_DECODER_THREADS. Checked
+  # with @xiaolonw and he says it's okay to turn it off (no significant
+  # reduction in perf), so doing that for now.
+  # UPDATE: Still fails, so keeping this ON and reducing the number of threads
+  # Still fails some times, so reducing
+  COMPUTE_PRECISE_BN: False
+
+
+TEST:
+  DATA_TYPE: val
+  BATCH_SIZE: 8
+  CROP_SIZE: 224 # 224
+  SCALE: 256 # 128
+
+  VIDEO_LENGTH: 32  # default: 32  # <===============
+  SAMPLE_RATE: 8  # default: 2  # <===============
+
+  OUTPUT_NAME: softmax # output layer name
+  NUM_TEST_CLIPS: 30 # 10 clips and 3 crops per clip. These are hard-coded in the LMDB generation script (process_data/..)
+
+SOLVER:
+  LR_POLICY: 'steps_with_relative_lrs' # 'step', 'steps_with_lrs', 'steps_with_relative_lrs', 'steps_with_decay'
+  BASE_LR: 0.0025  # Half of the normal, since batch size is half of normal
+  STEP_SIZES: [20000, 14000, 6000] # [150150, 150150, 150150] # 30, 30, 30 epochs
+  LRS: [1.0, 0.1, 0.01, 0.001]  # since the batch size is 1/2
+  MAX_ITER: 30000 # 20000, but need to see when it converges
+
+  WEIGHT_DECAY: 0.0001
+  WEIGHT_DECAY_BN: 0.0
+  MOMENTUM: 0.9
+  NESTEROV: True
+  SCALE_MOMENTUM: True
+
+  WARMUP:
+    WARMUP_ON: False
+    WARMUP_START_LR: 0.001
+    WARMUP_END_ITER: 100
+
+CHECKPOINT:
+  DIR: .
+  CHECKPOINT_PERIOD: 5000
+
+NONLOCAL:
+  USE_ZERO_INIT_CONV: False
+  USE_BN: True
+  CONV3_NONLOCAL: True
+  CONV4_NONLOCAL: True
+  USE_SCALE: True
