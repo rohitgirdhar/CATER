@@ -10,14 +10,14 @@
 
 If this code helps with your work, please cite:
 
-R. Girdhar and D. Ramanan. **CATER: A diagnostic dataset for Compositional Actions and TEmporal Reasoning.** arXiv 2019.
+Rohit Girdhar and Deva Ramanan. **CATER: A diagnostic dataset for Compositional Actions and TEmporal Reasoning.** In International Conference on Learning Representations (ICLR), 2020.
 
 ```bibtex
-@inproceedings{girdhar2019cater,
+@inproceedings{girdhar2020cater,
     title = {{CATER: A diagnostic dataset for Compositional Actions and TEmporal Reasoning}},
     author = {Girdhar, Rohit and Ramanan, Deva},
-    booktitle = {arXiv preprint arXiv:1910.04744},
-    year = 2019
+    booktitle = {ICLR},
+    year = 2020
 }
 ```
 
