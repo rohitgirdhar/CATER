@@ -23,7 +23,7 @@ Rohit Girdhar and Deva Ramanan. **CATER: A diagnostic dataset for Compositional 
 
 ## Dataset
 
-A pre-generated sample of the dataset used in the paper is provided [here](https://cmu.box.com/s/bs48v6tvq6h6tfmda4oht1cw71dcfpdz).
+A pre-generated sample of the dataset used in the paper is provided [here](https://cmu.box.com/s/w1baekogh29fgu3zg7gr6k446xdalgf2).
 If you'd like to generate a version of the dataset, please follow instructions in [generate](generate).
 
 ## Baselines

@@ -1,9 +1,9 @@
 # Generating CATER
 
 
-## Pre-generated 
-A pre-generated version of the dataset as used in the paper is provided [here](https://cmu.box.com/s/bs48v6tvq6h6tfmda4oht1cw71dcfpdz).
-There are 4 `zip` files in the link, corresponding to the different versions used for experiments in the paper.
+## Pre-generated
+A pre-generated version of the dataset as used in the paper is provided [here](https://cmu.box.com/s/w1baekogh29fgu3zg7gr6k446xdalgf2).
+There are 4 folders at the link, corresponding to the different versions of the data used for experiments in the paper. Each contains a zip file with the videos, metadata, and a folder with the train/val files. The train files are further split into `train_subsetT.txt` (80% of `train.txt`) and `train_subsetV.txt` (20% of `train.txt`) as validation sets that could be used for hyperparameter optimization.
 
 1. `max2action.zip`: With only 2 objects moving in each time segment. We use these for evaluating the atomic and compositional recognition tasks (Tasks 1 and 2).
 2. `all_actions.zip`: With all objects moving at each time segment. We use these for evaluating the localization task (Task 3).
