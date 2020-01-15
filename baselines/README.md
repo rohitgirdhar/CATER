@@ -4,7 +4,7 @@ Here we provide code and some basic instructions to reproduce some of the baseli
 
 ## Setup and process the data
 
-Generate or copy over the pretrained data to a fast I/O directory. `unzip` the file. For the non-local code, we need to generate LMDBs. Do so by:
+Generate or copy over the pre-generated data to a fast I/O directory. `unzip` the file. For the non-local code, we need to generate LMDBs. Do so by:
 
 ```bash
 $ cd baselines/video-nonlocal-net
@@ -14,7 +14,7 @@ $ python process_data/cater/gen_lmdbs.py  # <-- This will generate the LMDBs in 
 
 ## Launch non-local training pipeline
 
-The training follows the same paradigm as the non local codebase. We provide sample `.yaml` config files in the `configs_cater` folder. To launch training, we provide a nifty little `launch.py` script. Again, you'll likely need to edit it to point it to the right paths (if needed), and launch the training as follows:
+The training follows the same paradigm as the non local codebase. We provide sample `.yaml` config files in the `configs_cater` folder. To launch training, we provide a nifty little `launch.py` script. Again, you'll likely need to edit it to point it to the right paths (if needed). The pretrained model used for initialization can be downloaded from the [non-local codebase](https://github.com/facebookresearch/video-nonlocal-net#pre-trained-models-for-downloads) [[direct link](https://cmu.box.com/s/nw9hqonwz25yl86xh9q3m9yoak8fige6)]. Then, launch the training as follows:
 
 ```bash
 $ vim configs_cater/001_I3D_NL_localize_imagenetPretrained_32f_8SR.yaml  # <-- change the first 2 lines to point to the data as processed above
