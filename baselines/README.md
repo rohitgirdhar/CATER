@@ -21,7 +21,7 @@ $ vim configs_cater/001_I3D_NL_localize_imagenetPretrained_32f_8SR.yaml  # <-- c
 $ python launch.py -c configs_cater/001_I3D_NL_localize_imagenetPretrained_32f_8SR.yaml
 ```
 
-This would run the training and testing. 
+This would run the training and testing. The final trained output model for this run available is [here](https://cmu.box.com/s/1q767qg2b50enmo32rxk7j19xj0apga6).
 Configs for other experiments can also be created based on provided config, and can be run in the same way.
 
 ### LSTM on top of Non local features
