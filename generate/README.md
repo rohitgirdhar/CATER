@@ -32,7 +32,7 @@ If you'd like to regenerate CATER or generate it with some modifications, please
 
 ## Requirements
 1. All CLEVR requirements (eg, Blender: the code was tested with v2.79b).
-2. This code was tested on CentOS 7. However, since not all dependencies were available locally in my machine, I ran it using in a [singularity](https://sylabs.io/docs/) VM. [Here's](https://cmu.box.com/s/krg7ehliaidruxjk21nfxsa0gge2uf2o) the VM spec that was used in the following code. If you need it, download and set the path in `launch.py`.
+2. This code was tested on CentOS 7. However, since not all dependencies were available locally in my machine, I ran it using in a [singularity](https://sylabs.io/docs/) VM. [Here's](https://cmu.box.com/shared/static/krg7ehliaidruxjk21nfxsa0gge2uf2o.img) the VM spec that was used in the following code. If you need it, download and set the path in `launch.py`.
 3. GPU: This code was tested with TITAN-X GPUs, though it should be compatible with most NVIDIA GPUs. By default it will use all the GPUs on the machine.
 
 
