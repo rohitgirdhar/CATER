@@ -16,15 +16,19 @@ Here are the direct links to the large ZIP files, which should make it easier to
 - all_actions
    - [videos.zip](https://cmu.box.com/shared/static/97kztikj3zwcgv5zu2by6c1jhlvh1d7x.zip)
    - [scenes.zip](https://cmu.box.com/shared/static/6pfetd8s5k7f6bettrpfv11xiqsgou39.zip)
+   - [lists.zip](https://cmu.box.com/shared/static/jr2cc6zomqb01hmzvjztpuip3h0sz8vz.zip)
 - all_actions_cameramotion
    - [videos.zip](https://cmu.box.com/shared/static/fevyo9fyzeb6vm418yaqjp3gi7tl9azb.zip)
    - [scenes.zip](https://cmu.box.com/shared/static/4u3v9rgusav887i9jfsesfa32yhoo104.zip)
+   - [lists.zip](https://cmu.box.com/shared/static/zua3a0afxtuxrkh3jnnkduwkodv816k1.zip)
 - max2action
    - [videos.zip](https://cmu.box.com/shared/static/jgbch9enrcfvxtwkrqsdbitwvuwnopl0.zip)
    - [scenes.zip](https://cmu.box.com/shared/static/922x4qs3feynstjj42muecrlch1o7pmv.zip)
+   - [lists.zip](https://cmu.box.com/shared/static/7svgta3kqat1jhe9kp0zuptt3vrvarzw.zip)
 - max2action_cameramotion
    - [videos.zip](https://cmu.box.com/shared/static/yvhx9p5haip5abzh9i2fofssjpq34zwz.zip)
    - [scenes.zip](https://cmu.box.com/shared/static/zfau8j1e6n7ylobf0g1d2wjdgdu86j2e.zip)
+   - [lists.zip](https://cmu.box.com/shared/static/i9kexj33if00t338esnw93uzm5f6sfar.zip)
 
 
 If you'd like to regenerate CATER or generate it with some modifications, please read on.
