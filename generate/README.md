@@ -30,6 +30,8 @@ Here are the direct links to the large ZIP files, which should make it easier to
    - [scenes.zip](https://cmu.box.com/shared/static/zfau8j1e6n7ylobf0g1d2wjdgdu86j2e.zip)
    - [lists.zip](https://cmu.box.com/shared/static/i9kexj33if00t338esnw93uzm5f6sfar.zip)
 
+This data is also available on [baidu](https://pan.baidu.com/s/1Jd5xM6J9mNdobBR33yfQPA) (code: d9nk) for faster access in Mainland China, thanks to [ruiyan1995](https://github.com/ruiyan1995).
+
 
 If you'd like to regenerate CATER or generate it with some modifications, please read on.
 
